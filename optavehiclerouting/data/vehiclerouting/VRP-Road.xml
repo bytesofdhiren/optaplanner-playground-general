@@ -1,0 +1,164 @@
+<solver-instance>
+    <status>SOLVING</status>
+    <planning-problem class="org.optaplanner.examples.vehiclerouting.domain.VehicleRoutingSolution">
+        <distanceType>ROAD_DISTANCE</distanceType>
+        <distanceUnitOfMeasurement>distance</distanceUnitOfMeasurement>
+        <locationList>
+            <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation>
+                <id>1</id>
+                <latitude>1150.0</latitude>
+                <longitude>1760.0</longitude>
+                <travelDistanceMap class="linked-hash-map">
+                    <entry>
+                        <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation>
+                            <id>2</id>
+                            <latitude>630.0</latitude>
+                            <longitude>1660.0</longitude>
+                            <travelDistanceMap class="linked-hash-map">
+                                <entry>
+                                    <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../../../../../../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                    <double>108.0</double>
+                                </entry>
+                                <entry>
+                                    <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation>
+                                        <id>3</id>
+                                        <latitude>40.0</latitude>
+                                        <longitude>2090.0</longitude>
+                                        <travelDistanceMap class="linked-hash-map">
+                                            <entry>
+                                                <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../../../../../../../../../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                                <double>241.0</double>
+                                            </entry>
+                                            <entry>
+                                                <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../../../../../../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                                <double>148.0</double>
+                                            </entry>
+                                            <entry>
+                                                <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation>
+                                                    <id>4</id>
+                                                    <latitude>750.0</latitude>
+                                                    <longitude>1100.0</longitude>
+                                                    <travelDistanceMap class="linked-hash-map">
+                                                        <entry>
+                                                            <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../../../../../../../../../../../../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                                            <double>190.0</double>
+                                                        </entry>
+                                                        <entry>
+                                                            <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../../../../../../../../../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                                            <double>137.0</double>
+                                                        </entry>
+                                                        <entry>
+                                                            <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../../../../../../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                                            <double>374.0</double>
+                                                        </entry>
+                                                        <entry>
+                                                            <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation>
+                                                                <id>5</id>
+                                                                <latitude>750.0</latitude>
+                                                                <longitude>2030.0</longitude>
+                                                                <travelDistanceMap class="linked-hash-map" id="12">
+                                                                    <entry>
+                                                                        <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../../../../../../../../../../../../../../../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                                                        <double>124.0</double>
+                                                                    </entry>
+                                                                    <entry>
+                                                                        <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../../../../../../../../../../../../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                                                        <double>88.0</double>
+                                                                    </entry>
+                                                                    <entry>
+                                                                        <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../../../../../../../../../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                                                        <double>171.0</double>
+                                                                    </entry>
+                                                                    <entry>
+                                                                        <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../../../../../../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                                                        <double>202.0</double>
+                                                                    </entry>                                                                                                                                
+                                                                </travelDistanceMap>
+                                                            </org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation>
+                                                            <double>202.0</double>
+                                                        </entry>                                                    
+                                                    </travelDistanceMap>
+                                                </org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation>
+                                                <double>374.0</double>
+                                            </entry>
+                                            <entry>
+                                                <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../entry[3]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[4]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                                <double>171.0</double>
+                                            </entry>                                        
+                                        </travelDistanceMap>
+                                    </org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation>
+                                    <double>148.0</double>
+                                </entry>
+                                <entry>
+                                    <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../entry[2]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[3]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                    <double>137.0</double>
+                                </entry>
+                                <entry>
+                                    <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../entry[2]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[3]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[4]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                                    <double>88.0</double>
+                                </entry>                            
+                            </travelDistanceMap>
+                        </org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation>
+                        <double>108.0</double>
+                    </entry>
+                    <entry>
+                        <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../entry[1]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[2]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                        <double>241.0</double>
+                    </entry>
+                    <entry>
+                        <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../entry[1]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[2]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[3]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                        <double>190.0</double>
+                    </entry>
+                    <entry>
+                        <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../../entry[1]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[2]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[3]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[4]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+                        <double>124.0</double>
+                    </entry>                
+                </travelDistanceMap>
+            </org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation>    
+            <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[1]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+            <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[1]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[2]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+            <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[1]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[2]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[3]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+            <org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation reference="../org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[1]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[2]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[3]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[4]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]"/>
+        </locationList>
+        <depotList>
+            <org.optaplanner.examples.vehiclerouting.domain.Depot>
+                <id>1</id>
+                <location class="org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation" reference="../../../locationList/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]" />
+            </org.optaplanner.examples.vehiclerouting.domain.Depot>
+        </depotList>
+        <vehicleList>
+            <org.optaplanner.examples.vehiclerouting.domain.Vehicle>
+                <id>0</id>
+                <capacity>20</capacity>
+                <depot class="org.optaplanner.examples.vehiclerouting.domain.Depot" reference="../../../depotList/org.optaplanner.examples.vehiclerouting.domain.Depot[1]" />
+            </org.optaplanner.examples.vehiclerouting.domain.Vehicle>
+            <org.optaplanner.examples.vehiclerouting.domain.Vehicle>
+                <id>1</id>
+                <capacity>20</capacity>
+                <depot class="org.optaplanner.examples.vehiclerouting.domain.Depot" reference="../../../depotList/org.optaplanner.examples.vehiclerouting.domain.Depot[1]" />
+            </org.optaplanner.examples.vehiclerouting.domain.Vehicle>            
+        </vehicleList>
+        <customerList>
+            <org.optaplanner.examples.vehiclerouting.domain.Customer>
+                <id>2</id>
+                <location class="org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation" reference="../../../locationList/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[1]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]" />
+                <demand>6</demand>
+            </org.optaplanner.examples.vehiclerouting.domain.Customer>
+            <org.optaplanner.examples.vehiclerouting.domain.Customer>
+                <id>3</id>
+                <location class="org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation" reference="../../../locationList/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[1]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[2]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]" />
+                <demand>7</demand>
+            </org.optaplanner.examples.vehiclerouting.domain.Customer>
+            <org.optaplanner.examples.vehiclerouting.domain.Customer>
+                <id>4</id>
+                <location class="org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation" reference="../../../locationList/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[1]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[2]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[3]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]" />
+                <demand>8</demand>
+            </org.optaplanner.examples.vehiclerouting.domain.Customer>
+            <org.optaplanner.examples.vehiclerouting.domain.Customer>
+                <id>5</id>
+                <location class="org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation" reference="../../../locationList/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[1]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[2]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[3]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]/travelDistanceMap/entry[4]/org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation[1]" />
+                <demand>9</demand>
+            </org.optaplanner.examples.vehiclerouting.domain.Customer>            
+        </customerList>
+    </planning-problem>
+</solver-instance>

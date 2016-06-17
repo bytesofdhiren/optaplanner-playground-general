@@ -1,0 +1,77 @@
+<solver-instance>
+    <status>SOLVING</status>
+    <planning-problem class="org.optaplanner.examples.vehiclerouting.domain.VehicleRoutingSolution">
+        <locationList>
+            <org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>
+                <id>1</id>
+                <latitude>34.0</latitude>
+                <longitude>31.0</longitude>
+            </org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>
+            <org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>
+                <id>2</id>
+                <latitude>1.0</latitude>
+                <longitude>1.0</longitude>
+            </org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>
+            <org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>
+                <id>3</id>5
+                <latitude>10.0</latitude>
+                <longitude>20.0</longitude>
+            </org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>
+            <org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>
+                <id>4</id>
+                <latitude>81.0</latitude>
+                <longitude>70.0</longitude>
+            </org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>
+            <org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>
+                <id>5</id>
+                <latitude>85.0</latitude>
+                <longitude>61.0</longitude>
+            </org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>   
+            <org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>
+                <id>6</id>
+                <latitude>100.0</latitude>
+                <longitude>125.0</longitude>
+            </org.optaplanner.examples.vehiclerouting.domain.location.AirLocation>            
+        </locationList>
+        <depotList>
+            <org.optaplanner.examples.vehiclerouting.domain.Depot>
+                <id>1</id>
+                <location class="org.optaplanner.examples.vehiclerouting.domain.location.AirLocation" reference="../../../locationList/org.optaplanner.examples.vehiclerouting.domain.location.AirLocation[6]" />
+            </org.optaplanner.examples.vehiclerouting.domain.Depot>
+        </depotList>
+        <vehicleList>
+            <org.optaplanner.examples.vehiclerouting.domain.Vehicle>
+                <id>0</id>
+                <capacity>20</capacity>
+                <depot class="org.optaplanner.examples.vehiclerouting.domain.Depot" reference="../../../depotList/org.optaplanner.examples.vehiclerouting.domain.Depot[1]" />                
+            </org.optaplanner.examples.vehiclerouting.domain.Vehicle>
+            <org.optaplanner.examples.vehiclerouting.domain.Vehicle>
+                <id>1</id>
+                <capacity>20</capacity>
+                <depot class="org.optaplanner.examples.vehiclerouting.domain.Depot" reference="../../../depotList/org.optaplanner.examples.vehiclerouting.domain.Depot[1]" />                
+            </org.optaplanner.examples.vehiclerouting.domain.Vehicle>            
+        </vehicleList>
+        <customerList>
+            <org.optaplanner.examples.vehiclerouting.domain.Customer>
+                <id>2</id>
+                <location class="org.optaplanner.examples.vehiclerouting.domain.location.AirLocation" reference="../../../locationList/org.optaplanner.examples.vehiclerouting.domain.location.AirLocation[2]" />
+                <demand>9</demand>
+            </org.optaplanner.examples.vehiclerouting.domain.Customer>
+            <org.optaplanner.examples.vehiclerouting.domain.Customer>
+                <id>3</id>
+                <location class="org.optaplanner.examples.vehiclerouting.domain.location.AirLocation" reference="../../../locationList/org.optaplanner.examples.vehiclerouting.domain.location.AirLocation[3]" />
+                <demand>7</demand>
+            </org.optaplanner.examples.vehiclerouting.domain.Customer>
+            <org.optaplanner.examples.vehiclerouting.domain.Customer>
+                <id>4</id>
+                <location class="org.optaplanner.examples.vehiclerouting.domain.location.AirLocation" reference="../../../locationList/org.optaplanner.examples.vehiclerouting.domain.location.AirLocation[4]" />
+                <demand>8</demand>
+            </org.optaplanner.examples.vehiclerouting.domain.Customer>
+            <org.optaplanner.examples.vehiclerouting.domain.Customer>
+                <id>5</id>
+                <location class="org.optaplanner.examples.vehiclerouting.domain.location.AirLocation" reference="../../../locationList/org.optaplanner.examples.vehiclerouting.domain.location.AirLocation[5]" />
+                <demand>6</demand>
+            </org.optaplanner.examples.vehiclerouting.domain.Customer>            
+        </customerList>
+    </planning-problem>
+</solver-instance>
