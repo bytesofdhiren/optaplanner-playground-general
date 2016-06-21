@@ -30,6 +30,7 @@ public abstract class Location {
     protected String name = null;
     protected double latitude;
     protected double longitude;
+    protected String distanceMap;
 
     public Long getId() {
         return id;
@@ -70,6 +71,14 @@ public abstract class Location {
 
     public void setLongitude(double longitude) {
         this.longitude = longitude;
+    }
+    
+    public String getDistanceMap() {
+        return distanceMap;
+    }
+
+    public void setDistanceMap(String distanceMap) {
+        this.distanceMap = distanceMap;
     }
 
     // ************************************************************************

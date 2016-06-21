@@ -18,7 +18,9 @@ package org.optaplanner.examples.vehiclerouting.domain;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 //import com.thoughtworks.xstream.annotations.XStreamAlias;
 //import com.thoughtworks.xstream.annotations.XStreamConverter;
@@ -31,6 +33,7 @@ import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
 //import org.optaplanner.examples.common.domain.AbstractPersistable;
 import org.optaplanner.examples.vehiclerouting.domain.location.DistanceType;
 import org.optaplanner.examples.vehiclerouting.domain.location.Location;
+import org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation;
 //import org.optaplanner.examples.vehiclerouting.domain.timewindowed.TimeWindowedVehicleRoutingSolution;
 //import org.optaplanner.persistence.xstream.impl.score.XStreamScoreConverter;
 
@@ -134,6 +137,16 @@ public class VehicleRoutingSolution implements Solution<HardSoftLongScore> {
     // Complex methods
     // ************************************************************************
     public Collection<? extends Object> getProblemFacts() {
+        for (int i = 0; i < locationList.size(); i++) {
+            String[] arr = locationList.get(i).getDistanceMap().split(",");
+            Map<RoadLocation, Double> map = new HashMap<RoadLocation, Double>();
+            for (int j = 0; j < locationList.size(); j++) {
+                RoadLocation destination = (RoadLocation) locationList.get(j);
+                map.put(destination, Double.parseDouble(arr[j]));
+            }
+            RoadLocation location = (RoadLocation) locationList.get(i);
+            location.setTravelDistanceMap(map);
+        }
         List<Object> facts = new ArrayList<Object>();
         facts.addAll(locationList);
         facts.addAll(depotList);
